@@ -30,10 +30,10 @@ Utility = {
             return false
         end
     end,
-    GetBestSword = function(meta: module, getInv): Instance
+    GetBestSword = function(meta: module, inv: table): Instance
         local hd = -math.huge
         local s;
-      	for _, i in next, getInv(game:GetService("Players").LocalPlayer).items do 
+      	for _, i in next, inv.items do 
         		local t = meta[i.itemType].sword;
         		if t then
           			local sd = (t.damage / t.attackSpeed);
