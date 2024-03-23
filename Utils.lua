@@ -43,7 +43,7 @@ Utility = {
           			end
         		end
       	end
-      	return Sword
+      	return s
     end,    
     Rotation = function(v0: Vector3): nil
         local v1 = v0
