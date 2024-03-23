@@ -38,7 +38,7 @@ Utility = {
         		if t then
           			local sd = (t.damage / t.attackSpeed);
           			if (sd > hd) then
-            				s = v;
+            				s = i;
             				hd = sd;
           			end
         		end
