@@ -61,7 +61,7 @@ Utility = {
         local chest;
       	for _, c in next, game:GetService("CollectionService"):GetTagged("chest") do
         		if c:FindFirstChild("ChestFolderValue") then
-          			if d < (c.Position - game:GetService("Players").LocalPlayer.Character.PrimaryPart.Position).Magnitude then
+          			if mdist > (c.Position - game:GetService("Players").LocalPlayer.Character.PrimaryPart.Position).Magnitude then
             				chest = c
             				mdist = (c.Position - game:GetService("Players").LocalPlayer.Character.PrimaryPart.Position).Magnitude
           			end
