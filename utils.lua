@@ -67,7 +67,7 @@ Utility = {
           			end
         		end
       	end
-      	return chest:FindFirstChild("ChestFolderValue")
+        if chest:FindFirstChild("ChestFolderValue") then return chest:FindFirstChild("ChestFolderValue") end
     end,
     GetCharacter = function(): Instance
         return game:GetService("Players").LocalPlayer.Character or nil
